@@ -6,17 +6,35 @@ const textoResultado = document.querySelector(".texto-resultao");
 
 const perguntas = [
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Qual é uma das principais causas da desigualdade de renda no Brasil?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "a) A falta de regulamentação no mercado financeiro.",
+            "b) A alta carga tributária sobre as grandes fortunas."
         ]
     },
     {
-        enunciado: "Pergunta 2",
+        enunciado: "Qual é uma das principais consequências da falta de acesso à educação de qualidade para crianças em áreas carentes?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "a) Maior taxa de analfabetismo e menor oportunidades de emprego no futuro.",
+            "b) Aumento na qualidade das infraestruturas públicas."
         ]
     }
 ];
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta() {
+    perguntaAtual = perguntas [atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    mostraAlternativas ();
+}
+
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas){
+        const botaoAlternativas = document.createElement("button"); 
+        botaoAlternativas.textContent = alternativa;
+        caixaAlternativas.appendChild(botaoAlternativas)
+    }
+}
+mostraPergunta()
+
