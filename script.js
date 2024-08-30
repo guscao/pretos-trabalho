@@ -11,7 +11,7 @@ const perguntas = [
             "a) A falta de regulamentação no mercado financeiro.",
             "b) A alta carga tributária sobre as grandes fortunas."
         ]
-    },
+    }
     {
         enunciado: "Qual é uma das principais consequências da falta de acesso à educação de qualidade para crianças em áreas carentes?",
         alternativas: [
