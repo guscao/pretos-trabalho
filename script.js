@@ -28,7 +28,7 @@ const perguntas = [
                 afirmacao:""
             },
             {
-                texto:"Aumento na qualidade das infraestruturas públicas."
+                texto:"Aumento na qualidade das infraestruturas públicas.",
                 afirmacao:""
             }
 
